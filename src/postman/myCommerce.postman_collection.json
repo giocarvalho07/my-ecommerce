@@ -1,0 +1,375 @@
+{
+  "info": {
+    "_postman_id": "dd899e6c-3757-48ac-82de-08feab64d957",
+    "name": "MyCommerce API",
+    "description": "Collection ajustada para o projeto MyCommerce com mapeamento correto de atributos.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "49545615",
+    "_collection_link": "https://go.postman.co/collection/49545615-dd899e6c-3757-48ac-82de-08feab64d957?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Customer",
+      "item": [
+        {
+          "name": "Register Customer",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"João Silva\",\n    \"email\": \"joao@email.com\",\n    \"phone\": \"11999999999\",\n    \"address\": \"Rua das Flores, 123\",\n    \"active\": true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/customer",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "customer"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Customer by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/customer/1",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "customer",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Customer",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/customer",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "customer"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Customer",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"João Silva Atualizado\",\n    \"email\": \"joao.novo@email.com\",\n    \"phone\": \"11988888888\",\n    \"address\": \"Nova Avenida, 456\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/customer/1",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "customer",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Inactivate Customer",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/customer/1",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "customer",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Restaurant",
+      "item": [
+        {
+          "name": "Register Restaurant",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Pizzaria Bella Napoli\",\n    \"category\": \"Italiana\",\n    \"address\": \"Rua Roma, 50\",\n    \"phone\": \"1144445555\",\n    \"feeDelivery\": 7.50,\n    \"active\": true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/restaurants",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "restaurants"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Restaurant",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Pizzaria Bella Napoli\",\n    \"category\": \"Italiana\",\n    \"address\": \"Rua Roma, 50\",\n    \"phone\": \"1144445555\",\n    \"feeDelivery\": 7.50,\n    \"active\": true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/restaurants",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "restaurants"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Restaurant by ID",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Pizzaria Bella Napoli\",\n    \"category\": \"Italiana\",\n    \"address\": \"Rua Roma, 50\",\n    \"phone\": \"1144445555\",\n    \"feeDelivery\": 7.50,\n    \"active\": true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/restaurants/1",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "restaurants",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Product",
+      "item": [
+        {
+          "name": "Register Product",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Pizza Margherita\",\n    \"description\": \"Molho de tomate e manjericão\",\n    \"category\": \"Pizza\",\n    \"price\": 45.90,\n    \"available\": true,\n    \"restaurant\": { \"id\": 1 }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/products",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "products"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Register Product Copy",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Pizza Margherita\",\n    \"description\": \"Molho de tomate e manjericão\",\n    \"category\": \"Pizza\",\n    \"price\": 45.90,\n    \"available\": true,\n    \"restaurant\": { \"id\": 1 }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/products",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "products"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Order",
+      "item": [
+        {
+          "name": "Create Order",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"customer\": { \"id\": 1 },\n    \"restaurant\": { \"id\": 1 },\n    \"deliveryAdress\": \"Rua das Flores, 123\",\n    \"feeDelivery\": 7.50,\n    \"totalValue\": 99.30,\n    \"status\": \"PENDING\",\n    \"itens\": [\n        {\n            \"amount\": 2,\n            \"unitPrice\": 45.90,\n            \"subtotal\": 91.80,\n            \"product\": { \"id\": 1 }\n        }\n    ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/orders",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "orders"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Order by Customer",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"customer\": { \"id\": 1 },\n    \"restaurant\": { \"id\": 1 },\n    \"deliveryAdress\": \"Rua das Flores, 123\",\n    \"feeDelivery\": 7.50,\n    \"totalValue\": 99.30,\n    \"status\": \"PENDING\",\n    \"itens\": [\n        {\n            \"amount\": 2,\n            \"unitPrice\": 45.90,\n            \"subtotal\": 91.80,\n            \"product\": { \"id\": 1 }\n        }\n    ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/orders/customer/1",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "orders",
+                "customer",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Status by Orer",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"customer\": { \"id\": 1 },\n    \"restaurant\": { \"id\": 1 },\n    \"deliveryAdress\": \"Rua das Flores, 123\",\n    \"feeDelivery\": 7.50,\n    \"totalValue\": 99.30,\n    \"status\": \"PENDING\",\n    \"itens\": [\n        {\n            \"amount\": 2,\n            \"unitPrice\": 45.90,\n            \"subtotal\": 91.80,\n            \"product\": { \"id\": 1 }\n        }\n    ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/orders/1/statusOrder?statusOrder=CONFIRMED",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "orders",
+                "1",
+                "statusOrder"
+              ],
+              "query": [
+                {
+                  "key": "statusOrder",
+                  "value": "CONFIRMED"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080"
+    }
+  ]
+}
