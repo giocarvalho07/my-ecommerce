@@ -1,6 +1,3 @@
-Here is the updated **README.md** in English, adjusted to the **MyCommerce** project naming conventions (singular endpoints, English fields, and specific Enum statuses) that we corrected during our troubleshooting.
-
----
 
 # MyCommerce API 🍔
 
